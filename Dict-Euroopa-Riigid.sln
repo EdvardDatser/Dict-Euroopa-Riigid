@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Dict-Euroopa-Riigid", "Dict-Euroopa-Riigid\Dict-Euroopa-Riigid.pyproj", "{190684DB-8559-4DAF-A526-89C02AB74AD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{190684DB-8559-4DAF-A526-89C02AB74AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190684DB-8559-4DAF-A526-89C02AB74AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC212B2F-6202-4967-9EE0-4114CEA7EAFA}
+	EndGlobalSection
+EndGlobal
