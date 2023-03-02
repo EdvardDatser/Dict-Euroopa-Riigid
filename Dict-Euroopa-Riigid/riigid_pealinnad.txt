@@ -1,10 +1,10 @@
 Albaania-Tirana
-Andorra-Andorra-la-Vella
+Andorra-Andorra_la_Vella
 Armeenia-Jerevan
 Aserbaidžaan-Bakuu
 Austria-Viin
 Belgia-Brüssel
-Bosnia-ja-Hertsegoviina-Sarajevo
+Bosnia_ja_Hertsegoviina-Sarajevo
 Bulgaaria-Sofia
 Eesti-Tallinn
 Gruusia-Thbilisi
@@ -33,7 +33,7 @@ Prantsusmaa-Pariis
 Rootsi-Stockholm
 Rumeenia-Bukarest
 Saksamaa-Berliin
-San-Marino-San-Marino
+San_Marino-San_Marino
 Serbia-Belgrad
 Slovakkia-Bratislava
 Sloveenia-Ljubljana
