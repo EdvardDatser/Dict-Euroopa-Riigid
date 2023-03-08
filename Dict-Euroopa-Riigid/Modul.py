@@ -1,6 +1,6 @@
 from random import *
 
-def file(f: dict, s: dict, r: dict, p: dict):
+def loe_fail(f: str, s: dict, r: dict, p: dict):
     file=open(f, "r")
     for line in file:
         k, v=line.strip().split("-")
@@ -11,63 +11,63 @@ def file(f: dict, s: dict, r: dict, p: dict):
     return s, r, p
 
 def riigid_pealinn(r:dict, p:dict):
-    ans=int(input("Страна - 1, Столица - 2\n"))
+    ans=int(input("Riik - 1, Pealinn - 2\n"))
     if ans == 1:
-        riik = str(input("Название страны.\n"))
+        riik = str(input("Riigi nimi.\n"))
         print(r[f"{riik}"])
     elif ans == 2:
-        pealinn = str(input("Название столицы.\n"))
+        pealinn = str(input("Peallinna nimi.\n"))
         print(p[f"{pealinn}"])
     return r, p
 
-def file_add(r:dict, p:dict):
-        riik=input("Запишите страну: ")
-        pealinn=input("Запишите столицу: ")
+def Lisamine(r:dict, p:dict):
+        riik=input("Kirjutage Riik: ")
+        pealinn=input("Kirjutage Pealinn: ")
         r.update({riik:pealinn})
         p.update({pealinn:riik})
         return r, p
 
-def file_change(r:dict, p:dict):
-        riik = str(input("Введите страну которую хотите исправить: "))
-        pealinn = str(input("Введите столицу которую хотите исправить: "))
+def Muuda(r:dict, p:dict):
+        riik = str(input("Sisesta riik, mida soovid parandada: "))
+        pealinn = str(input("Sisesta pealinn, mida soovid parandada: "))
         r.pop(riik)
         p.pop(pealinn)
-        riik2 = str(input("Введите новую страну: "))
-        pealinn2 = str(input("Введите новую столицу: "))
+        riik2 = str(input("Sisetage uus riik: "))
+        pealinn2 = str(input("Sisetage uss peallinn: "))
         r.update({riik2: pealinn2})
         p.update({pealinn2: riik2})
         return r, p
 
-def game(r:dict, p:dict):
+def Teadmistekontroll(r:dict, p:dict):
     riik=list(r.keys())
     pealinn=list(p.values())
     ko=0
     try:
-        n = int(input("Сколько вопросов желаете?\n"))
+        n = int(input("Kui palju küsimusi soovite?\n"))
     except:
         print(TypeError)
 
-    k = int(input("Желаете называть столицы(1) или страны(2)?"))
+    k = int(input("Soovite nimetada pealinnu <1> või riike <2> ?"))
     for i in range(0,n):
         if k==1:
             rand=choice(riik)
             ind=riik.index(rand)
             print(pealinn[ind])
-            sona=input("Введите: ")
+            sona=input("Sisesta: ")
             if sona in riik[ind]:
-                print("Правильно")
+                print("Õige")
                 ko+=1
             else:
-                print("Неверно")
+                print("Vale")
         elif k ==2:
             rand=choice(pealinn)
             ind=pealinn.index(rand)
             print(riik[ind])
-            sona = input("Введите: ")
+            sona = input("Sisesta: ")
             if sona in pealinn[ind]:
-                print("Верно")
+                print("Õige")
                 ko+=1
             else:
-                print("Неверно")
-    percent = ko * 100 // n
+                print("Vale")
+    percent = round(ko / n * 100) 
     print(percent, "%")
